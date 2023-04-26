@@ -4,36 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FlowLifecycleActivity">
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/txt"
+        android:id="@+id/txt_show_data"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="58dp"
-        app:layout_constraintBottom_toTopOf="@id/btn" />
+        app:layout_constraintBottom_toTopOf="@id/btn_get_data" />
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn"
+        android:id="@+id/btn_get_data"
         android:layout_width="128dp"
         android:layout_height="48dp"
-        android:text="Get Data"
+        android:text="@string/get_data"
         android:textSize="13sp"
+        android:textStyle="italic"
         app:layout_constraintBaseline_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_next"
-        android:layout_width="98dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="4dp"
-        android:text="Next"
-        android:textSize="13sp"
-        app:layout_constraintBaseline_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/btn"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt" />
+        app:layout_constraintTop_toBottomOf="@id/txt_show_data" />
 </androidx.constraintlayout.widget.ConstraintLayout>
