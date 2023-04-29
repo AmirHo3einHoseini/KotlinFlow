@@ -13,6 +13,12 @@
         android:theme="@style/Theme.KotlinFlow"
         tools:targetApi="31">
         <activity
+            android:name=".BasicFlowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorsActivity"
+            android:exported="false" />
+        <activity
             android:name=".FlowLifecycleActivity"
             android:exported="false" />
         <activity
